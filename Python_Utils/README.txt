@@ -1,0 +1,1 @@
+This project has common utilities which are always required in project. To use these utilities in your peoject simply clone this repository and copy paste Utils file in your project. Import them in your class or program and start calling the function in them.
