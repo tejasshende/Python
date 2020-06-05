@@ -1,5 +1,11 @@
-.pyc
-.class
+*.pyc
+*.class
+*.iml
+.project
+.settings
+.factorysettings
+.classpath
 .vscode
-.idea
+.idea/*
 .metadata
+__pycache__/*

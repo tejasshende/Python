@@ -6,7 +6,7 @@ class runner(object):
     def select_data(self):
         try:
             with db.execute_dql('localhost','test','postgres','admin',1234) as executor:
-                executor.execute("SELECT * FROM t_ctrlm_job_exec")
+                executor.execute("SELECT * FROM test")
 
                 if executor is not None:
                     for data in executor.fetchall():
@@ -33,8 +33,8 @@ class runner(object):
 
 def main():
     run = runner()
-    run.select_data()
     run.modify_data()
+    run.select_data()
 
 if __name__ == "__main__":
     main()

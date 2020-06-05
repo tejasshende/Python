@@ -25,8 +25,9 @@ def execute_dml(host, database, user, password, port):
         print("Initilized database connection...")
         db_connection = psycopg2.connect(host=host,database=database, user=user, password=password, port=port)
         db_cursor=db_connection.cursor()
+        db_connection.autocommit=True
         yield db_cursor
-        db_connection.commit()
+        #db_connection.commit()
     except Exception as e:
         db_connection.rollback()
         print(e)
