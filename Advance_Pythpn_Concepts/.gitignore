@@ -5,7 +5,7 @@
 .settings
 .factorysettings
 .classpath
-.vscode
+.vscode/*
 .idea/*
 .metadata
 __pycache__/*
