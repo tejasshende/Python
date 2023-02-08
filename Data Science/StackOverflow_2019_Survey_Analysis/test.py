@@ -19,4 +19,4 @@ class def_work(object):
             time.sleep(500)
             self.code()
             self.repeat()
-        
+            
